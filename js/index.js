@@ -56,4 +56,25 @@ let ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
 
+let features = document.querySelector('.top-content .text-content:nth-of-type(1)');
+features.querySelector('h4').textContent = siteContent['main-content']['features-h4'];
+features.querySelector('p').textContent = siteContent['main-content']['features-content'];
 
+let about = document.querySelector('.top-content .text-content:nth-of-type(2)');
+about.querySelector('h4').textContent = siteContent['main-content']['about-h4'];
+about.querySelector('p').textContent = siteContent['main-content']['about-content'];
+
+let middleImg = document.querySelector('#middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+let services = document.querySelector('.bottom-content .text-content:nth-of-type(1)');
+services.querySelector('h4').textContent = siteContent['main-content']['services-h4'];
+services.querySelector('p').textContent = siteContent['main-content']['services-content'];
+
+let product = document.querySelector('.bottom-content .text-content:nth-of-type(2)');
+product.querySelector('h4').textContent = siteContent['main-content']['product-h4'];
+product.querySelector('p').textContent = siteContent['main-content']['product-content'];
+
+let vision = document.querySelector('.bottom-content .text-content:nth-of-type(3)');
+vision.querySelector('h4').textContent = siteContent['main-content']['vision-h4'];
+vision.querySelector('p').textContent = siteContent['main-content']['vision-content'];
