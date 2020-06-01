@@ -46,4 +46,14 @@ let navLinks = document.querySelectorAll('nav a');
     link.textContent = siteContent['nav'][`nav-item-${index+1}`];
   });
 
+let title = document.querySelector('.cta-text h1');
+title.textContent = siteContent['cta']['h1'];
+
+let mainCta = document.querySelector('.cta-text button');
+mainCta.textContent = siteContent['cta']['button'];
+
+let ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+
 
