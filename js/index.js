@@ -121,3 +121,12 @@ contact.querySelector('p:nth-of-type(3)').textContent = siteContent['contact']['
 
 let footer = document.querySelector('footer');
 footer.querySelector('p').textContent = siteContent['footer']['copyright'];
+
+
+// === stretch ===
+
+let body =document.body;
+mainCta.addEventListener('click', function(){
+    body.style.backgroundColor = 'black';
+    body.style.color = 'white';  
+});
