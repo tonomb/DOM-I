@@ -45,7 +45,35 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 let navLinks = document.querySelectorAll('nav a');
   navLinks.forEach((link, index) =>{
     link.textContent = siteContent['nav'][`nav-item-${index+1}`];
+    link.style.color = 'green';
   });
+
+  let nav = document.querySelector('nav');
+
+  let teamLink = {
+    href: '#',
+    textContent: 'Team'
+  }
+  
+  const newlinkTeam = document.createElement('a')
+  
+  newlinkTeam.href = teamLink.href
+  newlinkTeam.textContent = teamLink.textContent
+  
+  nav.appendChild(newlinkTeam);
+
+  let homeLink = {
+    href: '#',
+    textContent: 'Home'
+  }
+
+  const newLinkHome = document.createElement('a');
+
+  newLinkHome.href = homeLink.href;
+  newLinkHome.textContent = homeLink.textContent;
+
+  nav.prepend(newLinkHome);
+
 
 // === cta section ===
 let title = document.querySelector('.cta-text h1');
